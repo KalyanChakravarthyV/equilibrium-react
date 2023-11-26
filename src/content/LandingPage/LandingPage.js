@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tabs, Tab } from 'carbon-components-react';
+import { Tabs, Tab } from '@carbon/react';
 
 const props = {
   tabs: {

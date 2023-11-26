@@ -1,6 +1,6 @@
 import './app.scss';
 import React, { Component } from 'react';
-import { Content } from 'carbon-components-react';
+import { Content } from '@carbon/react';
 import GlobalHeader from './components/GlobalHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';

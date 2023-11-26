@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Button } from '@carbon/react';
 
 import CodeMirror from '@uiw/react-codemirror';
+import { sql } from '@codemirror/lang-sql';
 
 const SQLEditor = () => {
   const [setValue] = useState({});
@@ -21,6 +22,7 @@ const SQLEditor = () => {
         width="100%"
         height="500px"
         onChange={() => handleChange}
+        extensions={[sql()]}
       />
 
       <div>
