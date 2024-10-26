@@ -21,6 +21,9 @@ import {
 import { InfoSection, InfoCard } from '@/components/Info/Info';
 import Image from 'next/image';
 
+import zipy from 'zipyai';
+zipy.init(process.env.ZIPAI_KEY);
+
 export default function LandingPage() {
   return (
     <Grid className="landing-page" fullWidth>
@@ -56,7 +59,12 @@ export default function LandingPage() {
                     Project Equilibrium is a fully open source set of tools for
                     IBM TRIRIGA
                   </p>
-                  <Button>Learn more</Button>
+                  <Button
+                    href="https://github.com/users/KalyanChakravarthyV/projects/1"
+                    target="-blank">
+                    {' '}
+                    Learn more
+                  </Button>
                 </Column>
               </Grid>
             </TabPanel>

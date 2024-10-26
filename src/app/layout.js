@@ -10,7 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ height: '100vh', backgroundColor: 'black' }}>
+        <script>0</script>
         <Providers>{children}</Providers>
       </body>
     </html>
