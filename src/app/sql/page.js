@@ -27,7 +27,9 @@ import { IconButton } from '@carbon/react';
 import { Add } from '@carbon/react/icons';
 import DataExportClient from './dataExportClient';
 
-const initialDoc = 'SELECT * FROM IBS_SPEC WHERE SPEC_ID = 221931;';
+const initialDoc =
+  'q1:SELECT SPEC_TEMPLATE_ID,NAME FROM IBS_SPEC_TYPE;\n' +
+  'q2:SELECT SPEC_TEMPLATE_ID, COUNT(SPEC_ID) AS BO_COUNT FROM IBS_SPEC GROUP BY SPEC_TEMPLATE_ID;';
 
 const showTreeGrid = false;
 let nodes = [
@@ -113,10 +115,6 @@ const SQLEditor = () => {
 
   function handleChange(value) {
     console.log('handleChange:', value);
-    setSQLQueryValue(value);
-  }
-  function handleChange2(editor, metadata, value) {
-    console.log('handleChange:', editor, metadata, value);
     setSQLQueryValue(value);
   }
 

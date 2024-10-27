@@ -8,7 +8,7 @@ const nextConfig = {
 
   basePath: '/html/en/default/rest/Equilibrium/app/main',
   distDir: 'main',
-  pageExtensions: ['html', 'jsx', 'js', 'tsx', 'ts'],
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

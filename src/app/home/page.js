@@ -56,15 +56,31 @@ export default function LandingPage() {
                     What is Equilibrium?
                   </h2>
                   <p className="landing-page__p">
-                    Project Equilibrium is a fully open source set of tools for
-                    IBM TRIRIGA
+                    Project Equilibrium is a fully open source rich set of tools
+                    for IBM TRIRIGA
+                    <br />
                   </p>
-                  <Button
-                    href="https://github.com/users/KalyanChakravarthyV/projects/1"
-                    target="-blank">
-                    {' '}
-                    Learn more
-                  </Button>
+                  <p className="landing-page__p">
+                    Navigate through burger menu or the menu links
+                  </p>
+
+                  <ul style={{ marginLeft: 6, fontSize: 20 }}>
+                    <li style={{ padding: 6 }}>
+                      Finder: Working on translations or need to download the OM
+                      packages? Download the entire directory as a zip file
+                      <br />
+                    </li>
+
+                    <li style={{ padding: 6 }}>
+                      $QL Editor: Comparing versions for upgrades? Export
+                      multiple SQL queries directly to .xlsx file in one-go{' '}
+                      <br />
+                    </li>
+                    <li style={{ padding: 6 }}>
+                      $KryptOn: Unlease the power of server-side JavaScript!
+                      <br />
+                    </li>
+                  </ul>
                 </Column>
               </Grid>
             </TabPanel>
